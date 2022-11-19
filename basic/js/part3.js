@@ -22,4 +22,22 @@
 // window.addEventListener("online", () => { alert("online") });
 // window.addEventListener("offline", () => { alert("offline") });
 //----------------------------------
-// 3.6
+// 3.6 조건문
+// contentTitle.addEventListener("click", () => {
+//   if (contentTitle.style.color === "blue") {
+//     contentTitle.style.color="tomato"
+//   } else {
+//     contentTitle.style.color="blue"
+//   }
+// })
+//----------------------------------
+// 3.7 활용
+const contentTitle = document.querySelector("h1");
+
+contentTitle.addEventListener("click", () => {
+  if (contentTitle.className === "active") {
+    contentTitle.className = "";
+  } else {
+    contentTitle.className = "active";
+  }
+})
