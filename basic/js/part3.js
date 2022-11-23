@@ -32,12 +32,25 @@
 // })
 //----------------------------------
 // 3.7 활용
-const contentTitle = document.querySelector("h1");
-
-contentTitle.addEventListener("click", () => {
-  if (contentTitle.className === "active") {
-    contentTitle.className = "";
-  } else {
-    contentTitle.className = "active";
-  }
-})
+// contentTitle.addEventListener("click", () => {
+//   if (contentTitle.className === "active") {
+//     contentTitle.className = "";
+//   } else {
+//     contentTitle.className = "active";
+//   }
+// })
+// ---------------------------------
+// const contentTitle = document.querySelector("h1");
+// contentTitle.addEventListener("click", () => {
+//   const clickClass = "Clicked";
+//   if (contentTitle.classList.contains(clickClass)) {
+//     contentTitle.classList.remove(clickClass);
+//   } else {
+//     contentTitle.classList.add(clickClass);
+//   }
+//   console.log(contentTitle.classList)
+// })
+// const contentTitle = document.querySelector("h1");
+// contentTitle.addEventListener("click", () => {
+//   contentTitle.classList.toggle("Clicked");
+// })
