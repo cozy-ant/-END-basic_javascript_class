@@ -10,3 +10,7 @@ h1 {
 .Clicked {
   color: tomato;
 }
+
+.hidden {
+  display: none;
+}
