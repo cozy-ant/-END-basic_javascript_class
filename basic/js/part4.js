@@ -28,7 +28,10 @@ const USERNAME_KEY = "userName";
 
 localStorage.clear()
 
-const showText = (userName) => {
+const getStorageKey = localStorage.getItem(USERNAME_KEY);
+
+const showText = () => {
+  const userName =  localStorage.getItem(USERNAME_KEY);
   title.textContent = `Hello ${userName}`;
   loginForm.classList.add(HIDDEN_CLASSNAME)  
 }
@@ -41,16 +44,12 @@ const onLoginSubmit = (event) => {
   
   title.classList.remove(HIDDEN_CLASSNAME)
 
-  showText(userName);
-  
-  console.log(userName)
+  showText();
 };
-
-const getStorageKey = localStorage.getItem(USERNAME_KEY);
 
 if (getStorageKey === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   loginForm.addEventListener('submit', onLoginSubmit)
 } else {
-  showText(getStorageKey);
+  showText();
 }
