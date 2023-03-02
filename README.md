@@ -1,7 +1,7 @@
 # -END-basic_javascript_class
 
-# JS 구조
-# Form & event
-# localStorage
-# setTimeOut & setInterval
-# use API & make To Do List
+1. JS 구조
+2. Form & event
+3. localStorage
+4. setTimeOut & setInterval
+5. use API & make To Do List
